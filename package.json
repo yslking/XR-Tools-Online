@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.160.0",
+    "vite-plugin-mkcert": "^1.17.2"
+  },
+  "name": "xr-tools-online",
+  "description": "Measuring the FOV (field of view) of an XR headset ONLINE.",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wayhoww",
+  "license": "MIT"
+}
