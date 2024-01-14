@@ -9,7 +9,6 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -25,12 +24,12 @@ jobs:
           npx vite build
       - name: Build
         run: npx vite build
-        
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages # default artifact name
           path: dist
+
   deploy:
     needs: build
     permissions:
