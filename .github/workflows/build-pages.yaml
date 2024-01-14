@@ -21,7 +21,6 @@ jobs:
         run: |
           npm install -g vite
           npm install
-          npx vite build
       - name: Build
         run: npx vite build
       - name: Archive production artifacts
